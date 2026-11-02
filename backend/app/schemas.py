@@ -9,7 +9,6 @@ class DraftEmailRequest(BaseModel):
     session_id: str
     tone: Literal["formal", "friendly"] = "formal"
 
-# Task 1: Pydantic Structured Output Schema
 class EmailDraftResponse(BaseModel):
     recipient: str = Field(description="Recipient name or email derived from session")
     subject: str = Field(description="Concise email subject line")

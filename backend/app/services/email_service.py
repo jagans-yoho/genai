@@ -33,7 +33,6 @@ Never send the email - return the draft only.
         except Exception:
             pass
 
-    # Fallback offline structured response
     name = "Rahul"
     if tone == "formal":
         subj = "Summary of your order query"
